@@ -56,15 +56,47 @@
 		5BF076FE297B2A3500206929 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				5BF076FF297B2A3500206929 /* AppDelegate.swift */,
-				5BF07701297B2A3500206929 /* SceneDelegate.swift */,
-				5BF07703297B2A3500206929 /* ViewController.swift */,
-				5BF07705297B2A3500206929 /* Main.storyboard */,
+				5BF07713297B2A4F00206929 /* VIewControllers */,
+				5BF07714297B2A9B00206929 /* Models */,
+				5BF07716297B2AFD00206929 /* StoryBoards */,
+				5BF07715297B2AC100206929 /* SupportFiles */,
 				5BF07708297B2A3700206929 /* Assets.xcassets */,
-				5BF0770A297B2A3700206929 /* LaunchScreen.storyboard */,
 				5BF0770D297B2A3700206929 /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		5BF07713297B2A4F00206929 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07703297B2A3500206929 /* ViewController.swift */,
+			);
+			path = VIewControllers;
+			sourceTree = "<group>";
+		};
+		5BF07714297B2A9B00206929 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BF07715297B2AC100206929 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5BF076FF297B2A3500206929 /* AppDelegate.swift */,
+				5BF07701297B2A3500206929 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		5BF07716297B2AFD00206929 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				5BF07705297B2A3500206929 /* Main.storyboard */,
+				5BF0770A297B2A3700206929 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
