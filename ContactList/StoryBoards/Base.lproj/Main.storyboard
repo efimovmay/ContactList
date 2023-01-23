@@ -20,7 +20,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="1" textLabel="e6N-nh-8Al" style="IBUITableViewCellStyleDefault" id="dwJ-SK-ZfX">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dwJ-SK-ZfX" id="SLe-QD-BrB">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="playback" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dwJ-SK-ZfX" id="SLe-QD-BrB">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -33,6 +33,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="jWL-43-2nB" kind="show" id="wuo-JV-VLz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -42,25 +45,75 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="OzE-LH-j2A"/>
                     <navigationItem key="navigationItem" customizationIdentifier="" id="pOx-6f-DdV"/>
-                    <connections>
-                        <segue destination="jWL-43-2nB" kind="show" identifier="Info" id="ZhX-NT-g4L"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4L-cj-aJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="834" y="-66"/>
         </scene>
-        <!--Info Person View Controller-->
+        <!--Person-->
         <scene sceneID="I3s-Wg-h79">
             <objects>
-                <viewController id="jWL-43-2nB" customClass="InfoPersonViewController" sceneMemberID="viewController">
+                <viewController id="jWL-43-2nB" customClass="InfoPersonViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RL0-b0-WXv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="UVq-bj-rG3">
+                                <rect key="frame" x="16" y="224.99999999999997" width="361" height="80.666666666666657"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-Ia-zDi">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="80.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVC-JV-R4a">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9A-cG-Wvs">
+                                                <rect key="frame" x="0.0" y="54.333333333333321" width="70" height="26.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="8e1-8Y-CpE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="RQh-xL-5Sh">
+                                        <rect key="frame" x="77" y="0.0" width="284" height="80.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr3-NZ-ncf">
+                                                <rect key="frame" x="0.0" y="0.0" width="284" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iA-Aa-7vq">
+                                                <rect key="frame" x="0.0" y="54.333333333333321" width="284" height="26.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oGo-S1-pA0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oGo-S1-pA0" firstAttribute="trailing" secondItem="UVq-bj-rG3" secondAttribute="trailing" constant="16" id="bRD-iN-zdF"/>
+                            <constraint firstItem="UVq-bj-rG3" firstAttribute="leading" secondItem="oGo-S1-pA0" secondAttribute="leading" constant="16" id="mkK-LL-KxZ"/>
+                            <constraint firstItem="UVq-bj-rG3" firstAttribute="top" secondItem="oGo-S1-pA0" secondAttribute="top" constant="70" id="qx1-dA-I3r"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DT9-Ql-nbH"/>
+                    <navigationItem key="navigationItem" title="Person" id="DT9-Ql-nbH"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="8iA-Aa-7vq" id="Ubb-oO-sJ3"/>
+                        <outlet property="phoneLabel" destination="Mr3-NZ-ncf" id="bVO-en-Dqy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgy-Oj-19c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

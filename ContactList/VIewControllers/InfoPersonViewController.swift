@@ -7,13 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class InfoPersonViewController: UIViewController {
+   
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        settingsUI()
     }
 
-
+    private func settingsUI() {
+        title = "\(person.name) \(person.sureName)"
+        phoneLabel.text = person.phone
+        emailLabel.text = person.email
+    }
 }
 
