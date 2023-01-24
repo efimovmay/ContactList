@@ -21,7 +21,7 @@ class InfoPersonViewController: UIViewController {
     }
 
     private func settingsUI() {
-        title = "\(person.name) \(person.sureName)"
+        title = person.fullName
         phoneLabel.text = person.phone
         emailLabel.text = person.email
     }

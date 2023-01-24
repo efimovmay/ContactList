@@ -17,12 +17,11 @@ class FirstTableViewController: UITableViewController {
         return persons.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "1", for: indexPath)
 
         let person = persons[indexPath.row]
-        cell.textLabel?.text = "\(person.name) \(person.sureName)"
+        cell.textLabel?.text = person.fullName
 
         return cell
     }
