@@ -19,10 +19,10 @@ final class PersonTabBarController: UITabBarController {
     
     
     private func sendDataToViewControllers() {
-        guard let firstVC = viewControllers?.first as? FirstTableViewController else { return }
+        guard let firstVC = viewControllers?[0] as? FirstTableViewController else { return }
         firstVC.persons = persons
         
-        guard let secondVC = viewControllers?.last as? SecondTableViewController else { return }
+        guard let secondVC = viewControllers?[1] as? SecondTableViewController else { return }
         secondVC.persons = persons
     }
 }
