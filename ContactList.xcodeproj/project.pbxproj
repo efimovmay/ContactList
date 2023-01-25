@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B921CB42981BD8F003E14B0 /* PersonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B921CB32981BD8F003E14B0 /* PersonTabBarController.swift */; };
 		5BF07700297B2A3500206929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF076FF297B2A3500206929 /* AppDelegate.swift */; };
 		5BF07702297B2A3500206929 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07701297B2A3500206929 /* SceneDelegate.swift */; };
 		5BF07704297B2A3500206929 /* InfoPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07703297B2A3500206929 /* InfoPersonViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B921CB32981BD8F003E14B0 /* PersonTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTabBarController.swift; sourceTree = "<group>"; };
 		5BF076FC297B2A3500206929 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF076FF297B2A3500206929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF07701297B2A3500206929 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				5BF0771D297F185100206929 /* FirstTableViewController.swift */,
 				5BF0771F297F18A000206929 /* SecondTableViewController.swift */,
 				5BF07703297B2A3500206929 /* InfoPersonViewController.swift */,
+				5B921CB32981BD8F003E14B0 /* PersonTabBarController.swift */,
 			);
 			path = VIewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				5BF07700297B2A3500206929 /* AppDelegate.swift in Sources */,
 				5BF07720297F18A000206929 /* SecondTableViewController.swift in Sources */,
 				5BF0771C297F119100206929 /* DataStore.swift in Sources */,
+				5B921CB42981BD8F003E14B0 /* PersonTabBarController.swift in Sources */,
 				5BF07702297B2A3500206929 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,15 +7,13 @@
 
 import UIKit
 
-class SecondTableViewController: UITableViewController {
+final class SecondTableViewController: UITableViewController {
 
-    let persons = Person.getPersons()
-    
+    var persons: [Person]!
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return persons.count
     }
 

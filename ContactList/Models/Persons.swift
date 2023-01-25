@@ -23,19 +23,16 @@ struct Person {
         let phones = DataStore.phone.shuffled()
         let emails = DataStore.email.shuffled()
         
-        for number in 0..<names.count {
-            let person = Person(name: names[number],
-                                sureName: sureNames[number],
-                                phone: phones[number],
-                                email: emails[number])
+        for personNumber in 0..<names.count {
+            let person = Person(name: names[personNumber],
+                                sureName: sureNames[personNumber],
+                                phone: phones[personNumber],
+                                email: emails[personNumber])
             persons.append(person)
         }
         return persons
     }
     
-//    var fullName: String {
-//        name + surename
-//    }
 }
 
 

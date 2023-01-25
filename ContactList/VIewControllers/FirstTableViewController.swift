@@ -7,9 +7,9 @@
 
 import UIKit
 
-class FirstTableViewController: UITableViewController {
+final class FirstTableViewController: UITableViewController {
 
-    let persons = Person.getPersons()
+    var persons: [Person]!
     
     // MARK: - Table view data source
 
@@ -34,7 +34,5 @@ class FirstTableViewController: UITableViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             infoVC.person = persons[indexPath.row]
         }
-
     }
-
 }

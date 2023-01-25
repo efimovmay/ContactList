@@ -179,7 +179,7 @@
         <!--Persons list-->
         <scene sceneID="Wax-nu-7fd">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Yks-14-MHc" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Yks-14-MHc" customClass="PersonTabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons list" id="zg4-lC-fhn"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oK2-xn-GuU">
